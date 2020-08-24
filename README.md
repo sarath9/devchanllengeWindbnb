@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-DEMo:  https://flamboyant-mclean-13d56b.netlify.app/
+DEMO:  https://flamboyant-mclean-13d56b.netlify.app/
 
 ## Available Scripts
 
