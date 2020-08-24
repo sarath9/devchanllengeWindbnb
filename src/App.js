@@ -23,9 +23,15 @@ const guChange = (val) => {
 
 const searchHotels = () => {
 
+if(!gue){
+  alert("please Add Guests")
+
+} else {
   const localFi = stays.filter( el => el.city === option && el.maxGuests >= gue)
-console.log(localFi);
-setFilter(localFi);
+  console.log(localFi);
+  setFilter(localFi);
+}
+
 }
 
  //initial data 
@@ -36,7 +42,7 @@ setFilter(localFi);
 //set data
 const[stays, setStays] = useState([]);
 const [filtered, setFilter] = useState([]);
-const [option, setOption] = useState('');
+const [option, setOption] = useState('Helsinki');
 const [gue, setGue] = useState(0);
 
 const readData = () => {
@@ -49,7 +55,7 @@ setStays(localData);
 
 
   return (
-    <div className="App">
+    <div className="App container">
     <Header data={stays} optionChange={changeLo} guestchange={guChange} search={searchHotels} />
     <div className="info">
     <h2>Stays in Finland</h2>

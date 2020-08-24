@@ -5,8 +5,9 @@ const Card = ({content}) => {
         <>
 {
     content.map(item => (
-        <div className="card" key={item.photo}>
-        <img src={item.photo} alt={item.title} />
+        
+        <div className="col-md-4 mb-3" key={item.photo}>
+        <img className="img" src={item.photo} alt={item.title} />
         <div className="card-info">
         <div>
         <span className={`${item.superHost ? "visible badge" : "hidden"}`}>
@@ -28,6 +29,7 @@ star
         {item.title}
         </div>
         </div>
+        
     ))
 }
        

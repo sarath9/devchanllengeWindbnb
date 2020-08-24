@@ -17,11 +17,11 @@ const filtered = data.filter(el => {
 
 
 return(
-  <header>
-  <div className="logo">
+  <header className="row">
+  <div className="logo col-md-6">
   <img src={logo} alt="Windbnb" />
   </div>
-  <div className="filter">
+  <div className="filter col-md-6">
   <div>
   <select onChange={(e) => optionChange(e.target.value)}>
   {

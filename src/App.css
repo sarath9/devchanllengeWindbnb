@@ -77,6 +77,11 @@ flex-wrap: wrap;
   width: var(--wval);
   padding: 1rem;
 }
+.img{
+  height: 240px;
+  width:100%;
+  border-radius: var(--radius);
+}
 .card img{
   --w: 100%;
   width:var(--w);

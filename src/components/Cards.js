@@ -2,7 +2,7 @@ import React from 'react';
 import Card from './Card'
 
 const CardList = ({pass}) => (
-    <div className="grid-container">
+    <div className="row">
     <Card content={pass} />
     </div>
    
